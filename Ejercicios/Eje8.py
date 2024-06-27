@@ -18,4 +18,5 @@ contenido = [clases, limsInf, limsSup, mrksClases, fa, frStr, frAcStr]
 tbl.printHTMLTable(encabezados, contenido)
 
 
-
+graf.createHistogram(mrksClases, fr) 
+graf.createOjiva(mrksClases, frAc)
