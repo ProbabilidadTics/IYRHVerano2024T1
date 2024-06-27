@@ -9,4 +9,13 @@ datosDecimal = [
 
 print("A. Son datos continuos")
 
+clases, limsInf, limsSup, mrksClases, fa, fr, frAc = disCua.generateGroupedData(datosDecimal,1,6)
+frStr, frAcStr = tbl.datosStrPorcentaje(fr, frAc)
+
+
+encabezados = ["Clases", "L. Inferior", "L. Superior", "M. Clase", "F. Absoluta", "F. Relativa", "F. Acumulada"]
+contenido = [clases, limsInf, limsSup, mrksClases, fa, frStr, frAcStr]
+tbl.printHTMLTable(encabezados, contenido)
+
+
 
